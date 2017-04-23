@@ -3,7 +3,7 @@ class CreateAnswers < ActiveRecord::Migration[5.0]
     create_table :answers do |t|
       t.text :body
       t.integer :conversation_id, null: false
-      t.integer :user_id, null: false
+      t.integer :user_id
     end
 
     add_index :answers, :conversation_id

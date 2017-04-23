@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20170423122204) do
   create_table "answers", force: :cascade do |t|
     t.text    "body"
     t.integer "conversation_id", null: false
-    t.integer "user_id",         null: false
+    t.integer "user_id"
     t.index ["conversation_id"], name: "index_answers_on_conversation_id"
     t.index ["user_id"], name: "index_answers_on_user_id"
   end
@@ -23,10 +23,10 @@ ActiveRecord::Schema.define(version: 20170423122204) do
   create_table "conversations", force: :cascade do |t|
   end
 
-  create_table "questions", force: :cascade do |t|
+  create_table "messages", force: :cascade do |t|
     t.integer "conversation_id", null: false
     t.text    "body"
-    t.index ["conversation_id"], name: "index_questions_on_conversation_id"
+    t.index ["conversation_id"], name: "index_messages_on_conversation_id"
   end
 
   create_table "users", force: :cascade do |t|
