@@ -1,0 +1,8 @@
+awaiting_any_input: I can help with answer on your related questions and help to find a great job
+awaiting_user_name: Please enter your name
+awaiting_contact_type: Hello <%=user_name%>. How we can reach you?
+contact_failed: Said to here that. Whenever you change your mind - feel free to send me a message
+awaiting_email: Please type your email address
+awaiting_contact_confirmation: We are going to contact you using <%=contact_type%>
+awaiting_phone: Please type your phone number
+awaiting_contact_time: What is the best time we can reach out you?

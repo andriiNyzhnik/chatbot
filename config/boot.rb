@@ -12,3 +12,5 @@ $:.unshift File.join(APP_PATH, __FILE__)
 require File.join(ROOT_PATH, 'config', 'database')
 
 Dir[File.join(APP_PATH, "**/*.rb")].each { |f| require f }
+
+MESSAGES = YAML.load_file(File.join(ROOT_PATH, 'config', 'messages.yml')).freeze

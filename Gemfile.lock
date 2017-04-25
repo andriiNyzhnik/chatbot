@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    aasm (4.12.0)
+      concurrent-ruby (~> 1.0)
     actionpack (5.0.2)
       actionview (= 5.0.2)
       activesupport (= 5.0.2)
@@ -88,6 +90,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aasm (~> 4.12.0)
   activerecord (~> 5.0.2)
   bundler (~> 1.14.6)
   factory_girl

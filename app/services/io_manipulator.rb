@@ -7,12 +7,15 @@ module Services
     end
 
     def read
-      conversation.answers.create(body: gets.chomp)
+      user_input = gets.chomp
+      # conversation.answers.create(body: user_input)
+      user_input
     end
 
     def info(message)
-      conversation.messages.create(body: message)
+      return unless message
 
+      conversation.messages.create(body: message)
       puts message
     end
   end
