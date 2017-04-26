@@ -9,10 +9,10 @@ describe Services::IOManipulator do
   describe '#read' do
     before { expect(subject).to receive(:gets).and_return("#{ message }\n") }
 
-    it 'adds answer to conversation' do
-      expect{
-        subject.read
-      }.to change { conversation.answers.where(body: message).count }.by(1)
+    it 'gets user input' do
+      expect(subject).to receive_message_chain(:gets, :chomp)
+
+      subject.read
     end
   end
 

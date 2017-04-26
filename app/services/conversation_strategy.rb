@@ -2,8 +2,6 @@ require 'aasm'
 
 module Services
   class ConversationStrategy
-    INVALID_OPTION = 'Invalid option provided. Try again'.freeze
-
     include AASM
 
     attr_reader :conversation

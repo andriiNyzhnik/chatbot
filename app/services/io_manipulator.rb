@@ -7,9 +7,7 @@ module Services
     end
 
     def read
-      user_input = gets.chomp
-      # conversation.answers.create(body: user_input)
-      user_input
+      gets.chomp
     end
 
     def info(message)
